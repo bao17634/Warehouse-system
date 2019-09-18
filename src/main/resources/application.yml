@@ -10,7 +10,7 @@ spring:
       url: jdbc:mysql://localhost:3306/warehouse?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false
       username : root
       password : bao026099
-      driverClassName : com.mysql.jdbc.Driver
+      driverClassName : com.mysql.cj.jdbc.Driver
   jpa:
       hibernate:
         naming:
@@ -42,4 +42,7 @@ spring:
           starttls.enable: true
           socketFactory.port: 465　
           port: 465
-
+#控制日志输出颜色
+  output:
+    ansi:
+      enabled: detect
