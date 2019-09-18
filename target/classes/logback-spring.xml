@@ -34,7 +34,7 @@ monitorInterval：Log4j能够自动检测修改配置 文件和重新配置本�
     <loggers>
         <!--建立一个默认的root的logger  -->
         <root level="INFO">
-            <appender-ref ref="Console"/>
+            <appender-ref ref="STDOUT"/>
             <AppenderRef ref="filelog"/>
             <!-- 输出设置 -->
             <AppenderRef ref="RollingFile"/>
